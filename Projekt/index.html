@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.webp" alt="Logo">
+            <h1>Community</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <img src="/images/community.avif" alt="Hero Image">
+            <h2>Willkommen in der Community</h2>
+        </section>
+        <div class="controls">
+            <button onclick="location.href='/create-thread'">Beitrag erstellen</button>
+            <select id="sortDropdown" onchange="sortThreads()">
+                <option value="date">Sortieren nach Datum</option>
+                <option value="title">Sortieren nach Titel</option>
+            </select>
+        </div>
+        <div id="threads">
+            <!-- Forenbeiträge werden hier eingefügt -->
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2024 Community. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
